@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Guessing Game</title>
+</head>
+<body>
+
+  <h2>Join Game</h2>
+
+  <input id="username" placeholder="Enter your name" />
+  <button onclick="joinGame()">Join</button>
+
+  <button onclick="startGame()">Start Game</button>
+
+  <h3 id="question"></h3>
+
+  <input id="guessInput" placeholder="Enter guess" />
+  <button onclick="sendGuess()">Submit Guess</button>
+
+  <h3>Players</h3>
+  <div id="players"></div>
+
+  <script src="http://localhost:5000/socket.io/socket.io.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
